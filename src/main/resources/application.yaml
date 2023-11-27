@@ -1,0 +1,9 @@
+spring.config.import: classpath:/default.yaml
+--- ##override params below
+db:
+  username: testuser
+  password: password
+  url: jdbc:postgresql://10.10.10.10:9090/databasename
+
+server:
+  port: 8080

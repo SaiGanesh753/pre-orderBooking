@@ -1,0 +1,7 @@
+server:
+  servlet:
+    contextPath: /pre-orderBooking
+  port: '9090'
+hibernate:
+  dialect: org.hibernate.dialect.PostgreSQLDialect
+  show_sql: 'false'
