@@ -1,4 +1,4 @@
-package restController;
+package com.msg.preOrderBooking.restController;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
