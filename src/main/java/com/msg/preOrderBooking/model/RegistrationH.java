@@ -1,4 +1,4 @@
-package com.msg.preOrderBooking.restController.model;
+package com.msg.preOrderBooking.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

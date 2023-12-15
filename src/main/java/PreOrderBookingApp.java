@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import java.util.Properties;
 
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
-@ComponentScan(basePackages = {"com.msg.pre-orderBooking"})
+@ComponentScan(basePackages = {"com.msg.preOrderBooking"})
 public class PreOrderBookingApp extends SpringBootServletInitializer {
     public static void main(String[] args) {
         SpringApplication.run(PreOrderBookingApp.class, args);

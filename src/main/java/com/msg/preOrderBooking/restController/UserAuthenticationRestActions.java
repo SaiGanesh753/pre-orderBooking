@@ -9,9 +9,15 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class UserAuthenticationRestActions {
 
-    @GetMapping("/hello")
+    @GetMapping("/sampleHome")
     public ResponseBody homeScreenAction() {
       log.info("test case");
       return null;
+    }
+
+    @GetMapping("/")
+    public ResponseBody baseScreen() {
+        log.info("test case empty url");
+        return null;
     }
 }
