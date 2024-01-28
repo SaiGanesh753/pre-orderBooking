@@ -2,7 +2,30 @@ server:
   port: '9090'
   servlet:
     contextPath: /pre-orderBooking
-hibernate:
-  dialect: org.hibernate.dialect.PostgreSQLDialect
-  show_sql: 'false'
+
+#hibernate:
+ # dialect: org.hibernate.dialect.PostgreSQLDialect
+  #show_sql: 'false'
 spring.banner.location : classpath:app-banner
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: test_user
+    password: password
+    url: jdbc:postgresql://10.10.10.10:9090/test
+    platform: postgres
+    initialization-mode: always
+    continue-on-error: true
+  jpa:
+    database: postgresql
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+
+#logging
+logging:
+  level:
+    root: info
+    com.msg: debug

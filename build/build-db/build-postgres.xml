@@ -1,4 +1,4 @@
-<project name="BUILD-DSNYCC-DB" basedir="../../" default="">
+<project name="BUILD-PreOrder-DB" basedir="../../" default="">
 
 	<property name="build.dir" value="${basedir}/build/build-db" />
 
