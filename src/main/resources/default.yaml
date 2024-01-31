@@ -1,5 +1,5 @@
 server:
-  port: '9090'
+  port: '8080'
   servlet:
     contextPath: /pre-orderBooking
 
@@ -11,9 +11,9 @@ spring.banner.location : classpath:app-banner
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    username: test_user
+    username: username
     password: password
-    url: jdbc:postgresql://10.10.10.10:9090/test
+    url: jdbc:postgresql://10.10.10.10:5432/orderBooking
     platform: postgres
     initialization-mode: always
     continue-on-error: true
@@ -23,9 +23,3 @@ spring:
     generate-ddl: true
     hibernate:
       ddl-auto: update
-
-#logging
-logging:
-  level:
-    root: info
-    com.msg: debug

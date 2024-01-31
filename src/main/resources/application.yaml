@@ -1,11 +1,10 @@
 spring.config.import: classpath:/default.yaml
 --- ##override params below
-#db:
-  #platform: postgres
-  #username: saiganesh_ua
-  #password: password
-  #url: jdbc:postgresql://127.0.0.1:5432/user_auth
-  #driverClassName: org.postgresql.Driver
+spring:
+  datasource:
+    username: booking
+    password: password
+    url: jdbc:postgresql://10.10.10.10:5432/pre_order_booking
 
 server:
-  port: 8080
+  port: 9090
